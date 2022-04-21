@@ -1,7 +1,7 @@
 import React from 'react'
 import {AboutContainer, Title, StyledRow, ColText, ColImg, Img, SubTitle, SubText,StyledBtn, WorldContainer, WorldImg } from './AboutElements'
-import aboutImg from '../../../public/images/About-img.png';
-import worldImg from '../../../public/images/worldImg.png';
+import aboutImg from '../../images/About-img.png';
+import worldImg from '../../images/worldImg.png';
 
 function AboutSection() {
     return (

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bgImage from '../../../public/images/bg-g.svg';
+import bgImage from '../../images/bg-g.svg';
 
 export const FooterSection = styled.section`
     height: auto;

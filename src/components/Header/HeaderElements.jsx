@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bgFirst from '../../../public/images/bg-first.svg';
+import bgFirst from '../../images/bg-first.svg';
 import {Link} from 'react-scroll';
 
 export const HeaderConatiner = styled.header`

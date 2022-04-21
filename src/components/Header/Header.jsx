@@ -1,5 +1,5 @@
 import React from 'react'
-import maldiv from '../../../public/images/maldiv.jpg';
+import maldiv from '../../images/maldiv.jpg';
 import {HeaderConatiner, Container, ImageContainer ,Image, HeaderInfo, HTitle, HText, HButton} from './HeaderElements';
 import SearchTrip from '../SearchTrip/SearchTrip';
 

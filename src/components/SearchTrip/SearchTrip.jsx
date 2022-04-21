@@ -17,7 +17,7 @@ const Initdata = {
 
 function SearchTrip() {
 	const [ticketInfo, setTicketInfo] = useState(Initdata);
-	const [submit, setsubmit] = useState(false);
+	
 
 	const changeHandler = (e) => {
 		const { name, value } = e.target;
@@ -25,10 +25,7 @@ function SearchTrip() {
 	};
 
 	console.log("data", Initdata);
-	const submitFormHandler = (e) => {
-		e.preventDefault();
-		setsubmit(true);
-	};
+	
 
 	return (
 		<Container>

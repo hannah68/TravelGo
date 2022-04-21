@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bgImage from '../../../public/images/Alp-img.png';
+import bgImage from '../../images/Alp-img.png';
 
 
 export const TestimonialContainer = styled.section`
