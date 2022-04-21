@@ -1,7 +1,7 @@
 
 
 .HomeContainer{
-    background-image: url(../images/bg.svg);
+    background-image: url(../../public/images/bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;

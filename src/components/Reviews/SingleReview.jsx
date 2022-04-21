@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {BgImage, ReviewContainer, ImageContainer, UserName, UserReview, BtnContainer, PreviousBtn, NextBtn, QuoteIconBottom, UserImage, QuoteIcon} from './ReviewSectionElements';
-import quote from '../../images/quotes-top.svg';
-import quoteBottom from '../../images/quotes.svg';
+import quote from '../../../public/images/quotes-top.svg';
+import quoteBottom from '../../../public/images/quotes.svg';
 import reviewInfo from './data';
 import {FaArrowRight, FaArrowLeft} from 'react-icons/fa'
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import {animateScroll as scroll} from 'react-scroll';
 import {ContactSection, LogoSection, ImgageLogo, SocialMedia, SocialLink, NavMenu, NavItem, NavLinks, AddressInfo, Address } from './FooterContactElements';
-import logo from '../../images/logo.svg';
+import logo from '../../../public/images/logo.svg';
 import {FiFacebook} from 'react-icons/fi';
 import {FaPinterestP} from 'react-icons/fa';
 import {FiInstagram} from 'react-icons/fi';
