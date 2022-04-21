@@ -1,0 +1,12 @@
+
+
+.HomeContainer{
+    background-image: url(../images/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+
+    height: 100vh;
+    width:100%;
+}
