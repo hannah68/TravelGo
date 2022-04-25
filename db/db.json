@@ -100,5 +100,129 @@
             "place": "Budapest",
             "tour": "Holidays"
         }
-    ]
+    ],
+    "tourInfo": [
+        {
+            "id": 1,
+            "title": "Enjoy your most romantic trip to Paris with us",
+            "info": "Paris is synonymous with the finest things that culture can offer — in art, fashion, food, literature, and ideas. On this tour, your Paris-savvy Rick Steves guide will immerse you in the very best of he City of Light.the masterpiece-packed Louvre and Orsay museums, exquisite Sainte-Chapelle, and extravagant Palace of Versailles.",
+            "image": "./img/Paris.jpg",
+            "price": 450,
+            "duration": 3,
+            "place": "paris"
+        },
+        {
+            "id": 2,
+            "title": "The Japan hot list, new places, new experiences",
+            "info": "Japan is a bewildering, beautiful country that is like nowhere else. There are so many amazing things to do in Japan that one trip is never enough—it has stolen our hearts and we cant stop returning. From ancient temples to futuristic skyscrapers, tranquil tea ceremonies to over-the-top arcades, go-kart rides, Japan has so much to offer everyone.",
+            "image": "./img/Japan.jpg",
+            "price": 750,
+            "duration": 6,
+            "place": "Japan"
+        },
+        {
+            "id": 3,
+            "title": "Enjoy the sunset of London with our special tours",
+            "info": "Visit London, enjoy the citys fantastic sights and events, and make the most of the fabulous host of things to do in London. Whether you are a first-time visitor to the capital or a Londoner born and bred, you will discover plenty of things to see in London, from iconic London tourist attractions out in London. You can also get lost in the wonders of London .",
+            "image": "./img/london.jpg",
+            "price": 600,
+            "duration": 4,
+            "place": "London"
+        },
+        {
+            "id": 4,
+            "title": "Best of Amsterdom in 3 days tour",
+            "info": "Holland refused to follow suit, mostly thanks to the country’s flat terrain and a definitive choice to create the ideal cycling infrastructure. These days you can’t step a foot outside Central Station without seeing a continuous flurry of  parents transporting their young children. And it’s safe to say that Amsterdam is by far in the world.",
+            "image": "./img/Amsterdom.jpg",
+            "price": 550,
+            "duration": 3,
+            "place": "amsterdom"
+        },
+        {
+            "id": 5,
+            "title": "Budapest has something for everyone",
+            "info": "rom dramatic history and flamboyant architecture to healing thermal waters and a nightlife that is unrivalled in Eastern and Central Europe.The majestic, neo-Gothic Hungarian Parliament Building dates back to 1904 and looms over the Pest side of the Danube River. It’s the largest building in the country. Viewed from aboard river cruises or the western bank of the Danube.",
+            "image": "./img/Budapest.jpg",
+            "price": 330,
+            "duration": 4,
+            "place": "Budapest"
+        },
+        {
+            "id": 6,
+            "title": "Visit Rome, a romantic blend of culture and history ",
+            "info": "Rome is without doubt one the most beautiful cities in the world; every year millions of tourists come from around the world to admire the treasures and masterpieces of Roman art and architecture.The Roman countryside, the Campagna, was one of the last areas of central Italy to be settled in antiquity. Rome was built.",
+            "image": "./img/Rome.jpg",
+            "price": 420,
+            "duration": 4,
+            "place": "Rome"
+        }
+    ],
+    "reviews" :[
+        {
+          "id": 1,
+          "name": "Bill Anderson",
+          "image": "../public/images/user1.jpg",
+          "text":
+            "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry"
+        },
+        {
+          "id": 2,
+          "name": "Anna Johnson",
+          "image":"../public/images/user2.jpg",
+          "text":
+            "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal."
+        },
+        {
+          "id": 3,
+          "name": "Peter Jones",
+          "image":"../public/images/user3.jpg",
+          "text":
+            "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag."
+        },
+        {
+          "id": 4,
+          "name": "Susan Smith",
+          "image":"../public/images/user4.jpg",
+          "text":"Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic."
+        }
+      ],
+      "questions" : [
+        {
+          "id": 1,
+          "title": "Do I need travel insurance?",
+          "info":
+            "Travel insurance is available and recommended to protect your travel investment. Many trips, such as tours and cruises, involve non-refundable funds paid months in advance. Travel insurance protects you from losing this investment."
+        },
+        {
+          "id": 2,
+          "title": "Which style of trip is right for me?",
+          "info":
+            "Our three styles of travel – Basix, Original and Comfort – cover a whole gamut of travel experiences. To find out which one has ‘You’ written all over it, visit our trip styles page."
+        },
+        {
+          "id": 3,
+          "title": "If I am travelling solo, will I be charged a single supplement?",
+          "info":
+            "As a solo traveller, you will be paired up with another passenger of the same gender as per your passport information. If you’re not comfortable sharing a room with someone of the same gender, you also have the choice to pay for a single supplement (available on the majority of our trips)."
+        },
+        {
+          "id": 4,
+          "title": "I have a disability. can I join an travelgo trip?",
+          "info":
+            "TRAVELGO is committed to making travel widely accessible, regardless of ability or disability. We ask that you carefully consider whether you are physically and mentally able to complete the itinerary you have chosen, recognising that on many trips you will be required to carry your own bags"
+        },
+        {
+          "id": 5,
+          "title": "How do I cancel a trip?",
+          "info":
+            "Call us right away. If it’s after normal business hours, please contact the next involved travel supplier (airline, hotel, tour operator, cruise line) to cancel any reservations you will not be able to use. If you purchased travel insurance, please contact the insurance company’s 24-hour line to start"
+        },
+        {
+            "id": 6,
+            "title": "When will my credit card be charged?",
+            "info":
+              "Your card will only be charged if the booking has been confirmed exactly as quoted. If we are unable to confirm your booking as quoted, you will not be charged."
+        }
+      ]
+
 }
