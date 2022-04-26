@@ -1,11 +1,19 @@
-// import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {FooterSection, FaqSection, FaqTitle, SingleQuestionContainer} from './FAQElements';
-// import SingleFAQ from './SingleFAQ';
-// import data from './data';
+import SingleFAQ from './SingleFAQ';
 import FooterContact from './FooterContact';
 
 function FAQ() {
-    // const [questions, setQuestions] = useState(data);
+    const [questions, setQuestions] = useState();
+
+    useEffect(() => {
+        const fetchTourInfo = async() => {
+            const tourRes = await fetch('http://localhost:3030/questions')
+            const tourData = await tourRes.json()
+            setQuestions(tourData)
+        }
+        fetchTourInfo()
+      }, []);
 
     return (
         <FooterSection>
@@ -13,9 +21,11 @@ function FAQ() {
                 <FaqTitle>Vacation Travel FAQ</FaqTitle>
                 
                 <SingleQuestionContainer>
-                    {/* {questions.map((question) => {
-                        return <SingleFAQ key={question.id} {...question}/>
-                    })} */}
+                    {questions && (
+                        questions.map((question) => {
+                            return <SingleFAQ key={question.id} {...question}/>
+                        })
+                    )}
                 </SingleQuestionContainer>
             </FaqSection>
             

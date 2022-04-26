@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Full day Paris Walking Tour",
             "info": "Paris is synonymous with the finest things that culture can offer — in art, fashion, food, literature, and ideas. On this tour, your Paris-savvy Rick Steves guide will immerse you in the very best of he City of Light.the masterpiece-packed Louvre and Orsay museums, exquisite Sainte-Chapelle, and extravagant Palace of Versailles.",
-            "image": "./img/Paris.jpg",
+            "image": "./assets/images/Paris.jpg",
             "price": 450,
             "duration":"8 hours",
             "place": "Paris",
@@ -14,7 +14,7 @@
             "id": 2,
             "title": "Four Days Japan Tours",
             "info": "Japan is a bewildering, beautiful country that is like nowhere else. There are so many amazing things to do in Japan that one trip is never enough—it has stolen our hearts and we can’t stop returning. From ancient temples to futuristic skyscrapers, tranquil tea ceremonies to over-the-top arcades, go-kart rides, Japan has so much to offer everyone.",
-            "image": "./img/Japan.jpg",
+            "image": "./assets/images/Japan.jpg",
             "price": 1200,
             "duration": "4 days, 3 nights",
             "place": "Japan",
@@ -24,7 +24,7 @@
             "id": 3,
             "title": "Full Day Magic of London With Afternoon Cream Tea",
             "info": "Visit London, enjoy the city’s fantastic sights and events, and make the most of the fabulous host of things to do in London. Whether you are a first-time visitor to the capital or a Londoner born and bred, you’ll discover plenty of things to see in London, from iconic London tourist attractions out in London. You can also get lost in the wonders of London ...",
-            "image": "./img/tea.jpg",
+            "image": "./assets/images/tea.jpg",
             "price": 340,
             "duration": "8 Hours",
             "place": "London",
@@ -34,7 +34,7 @@
             "id": 4,
             "title": "Amsterdom Fully Two Days Tour With Lunch",
             "info": "Holland refused to follow suit, mostly thanks to the country’s flat terrain and a definitive choice to create the ideal cycling infrastructure. These days you can’t step a foot outside Central Station without seeing a continuous flurry of  parents transporting their young children. And it’s safe to say that Amsterdam is by far in the world...",
-            "image": "./img/Amsterdom.jpg",
+            "image": "./assets/images/Amsterdom.jpg",
             "price": 550,
             "duration": "Two days, 1 night",
             "place": "Amsterdom",
@@ -44,7 +44,7 @@
             "id": 5,
             "title": "Holidays in Spain and Portugal 2022",
             "info": "The majestic, neo-Gothic Hungarian Parliament Building dates back to 1904 and looms over the Pest side of the Danube River. It’s the largest building in the country. Viewed from aboard river cruises or the western bank of the Danube...",
-            "image": "./img/portugal.jpg",
+            "image": "./assets/images/portugal.jpg",
             "price": 970,
             "duration": "7 days, 6 night",
             "place": "Spain & Portugal",
@@ -54,7 +54,7 @@
             "id": 6,
             "title": "Best Of London and Britains Tour 2022 ",
             "info": "Parliament Building dates back to 1904 and looms over the Pest side of the Danube River. It’s the largest building in the country.and architecture.The Roman countryside, the Campagna, was one.in antiquity. Rome was built...",
-            "image": "./img/london2.jpg",
+            "image": "./assets/images/london2.jpg",
             "price": 380,
             "duration": "6 days, 5 nights",
             "place": "London",
@@ -64,7 +64,7 @@
             "id": 7,
             "title": "European Holiday Summer Tour 2022 ",
             "info": "world to admire the treasures and masterpieces of Roman art and architecture.The Roman countryside, the Campagna, was one of the last areas of central Italy to be settled in antiquity. Rome was built...",
-            "image": "./img/Rome.jpg",
+            "image": "./assets/images/Rome.jpg",
             "price": 1300,
             "duration":"10 days, 9 night",
             "place": "Europe",
@@ -74,7 +74,7 @@
             "id": 8,
             "title": "Holiday in France& Barcelona 2022 ",
             "info": "hat is unrivalled in Eastern and Central Europe.The majestic, neo-Gothic Hungarian Parliament Building dates back to 1904 and looms over the Pest side of the, the Campagna, was one of the last areas of central Italy to be settled in antiquity. Rome was built...",
-            "image": "./img/barcelona.jpg",
+            "image": "./assets/images/barcelona.jpg",
             "price": 1250,
             "duration": "11 days, 10 night",
             "place": "France & Barcelona",
@@ -84,7 +84,7 @@
             "id": 9,
             "title": "Italian Holiday Summer 2022 ",
             "info": "Rome is without doubt one the most beautiful cities in the world; every year millions of tourists come from around the world to admire the treasures and masterpieces of Roman art and architecture.The Roman countryside, the Campagna, was one of the last areas of central Italy to be settled in antiquity. Rome was built...",
-            "image": "./img/Italy.jpg",
+            "image": "./assets/images/Italy.jpg",
             "price": 975,
             "duration":"5 days, 4 night",
             "place": "Italy",
@@ -94,7 +94,7 @@
             "id": 10,
             "title": "Budapest with dramatic history and flamboyant architecture Summer 2022 ",
             "info": "Parliament Building dates back to 1904 and looms over the Pest side of the Danube River. It’s the largest building in the country.and architecture.The Roman countryside, the Campagna, was one.in antiquity. Rome was built Rome was built...",
-            "image": "./img/Budapest.jpg",
+            "image": "./assets/images/Budapest.jpg",
             "price": 975,
             "duration":"3 days, 2 night",
             "place": "Budapest",
@@ -106,7 +106,7 @@
             "id": 1,
             "title": "Enjoy your most romantic trip to Paris with us",
             "info": "Paris is synonymous with the finest things that culture can offer — in art, fashion, food, literature, and ideas. On this tour, your Paris-savvy Rick Steves guide will immerse you in the very best of he City of Light.the masterpiece-packed Louvre and Orsay museums, exquisite Sainte-Chapelle, and extravagant Palace of Versailles.",
-            "image": "./img/Paris.jpg",
+            "image": "./assets/images/Paris.jpg",
             "price": 450,
             "duration": 3,
             "place": "paris"
@@ -115,7 +115,7 @@
             "id": 2,
             "title": "The Japan hot list, new places, new experiences",
             "info": "Japan is a bewildering, beautiful country that is like nowhere else. There are so many amazing things to do in Japan that one trip is never enough—it has stolen our hearts and we cant stop returning. From ancient temples to futuristic skyscrapers, tranquil tea ceremonies to over-the-top arcades, go-kart rides, Japan has so much to offer everyone.",
-            "image": "./img/Japan.jpg",
+            "image": "./assets/images/Japan.jpg",
             "price": 750,
             "duration": 6,
             "place": "Japan"
@@ -124,7 +124,7 @@
             "id": 3,
             "title": "Enjoy the sunset of London with our special tours",
             "info": "Visit London, enjoy the citys fantastic sights and events, and make the most of the fabulous host of things to do in London. Whether you are a first-time visitor to the capital or a Londoner born and bred, you will discover plenty of things to see in London, from iconic London tourist attractions out in London. You can also get lost in the wonders of London .",
-            "image": "./img/london.jpg",
+            "image": "./assets/images/london.jpg",
             "price": 600,
             "duration": 4,
             "place": "London"
@@ -133,7 +133,7 @@
             "id": 4,
             "title": "Best of Amsterdom in 3 days tour",
             "info": "Holland refused to follow suit, mostly thanks to the country’s flat terrain and a definitive choice to create the ideal cycling infrastructure. These days you can’t step a foot outside Central Station without seeing a continuous flurry of  parents transporting their young children. And it’s safe to say that Amsterdam is by far in the world.",
-            "image": "./img/Amsterdom.jpg",
+            "image": "./assets/images/Amsterdom.jpg",
             "price": 550,
             "duration": 3,
             "place": "amsterdom"
@@ -142,7 +142,7 @@
             "id": 5,
             "title": "Budapest has something for everyone",
             "info": "rom dramatic history and flamboyant architecture to healing thermal waters and a nightlife that is unrivalled in Eastern and Central Europe.The majestic, neo-Gothic Hungarian Parliament Building dates back to 1904 and looms over the Pest side of the Danube River. It’s the largest building in the country. Viewed from aboard river cruises or the western bank of the Danube.",
-            "image": "./img/Budapest.jpg",
+            "image": "./assets/images/Budapest.jpg",
             "price": 330,
             "duration": 4,
             "place": "Budapest"
@@ -151,7 +151,7 @@
             "id": 6,
             "title": "Visit Rome, a romantic blend of culture and history ",
             "info": "Rome is without doubt one the most beautiful cities in the world; every year millions of tourists come from around the world to admire the treasures and masterpieces of Roman art and architecture.The Roman countryside, the Campagna, was one of the last areas of central Italy to be settled in antiquity. Rome was built.",
-            "image": "./img/Rome.jpg",
+            "image": "./assets/images/Rome.jpg",
             "price": 420,
             "duration": 4,
             "place": "Rome"
@@ -161,28 +161,28 @@
         {
           "id": 1,
           "name": "Bill Anderson",
-          "image": "../public/images/user1.jpg",
+          "image": "./assets/images/user1.jpg",
           "text":
             "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry"
         },
         {
           "id": 2,
           "name": "Anna Johnson",
-          "image":"../public/images/user2.jpg",
+          "image":"./assets/images/user2.jpg",
           "text":
             "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal."
         },
         {
           "id": 3,
           "name": "Peter Jones",
-          "image":"../public/images/user3.jpg",
+          "image":"./assets/images/user3.jpg",
           "text":
             "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag."
         },
         {
           "id": 4,
           "name": "Susan Smith",
-          "image":"../public/images/user4.jpg",
+          "image":"./assets/images/user4.jpg",
           "text":"Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic."
         }
       ],

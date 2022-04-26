@@ -24,7 +24,7 @@ function SearchTrip() {
 		setTicketInfo({ ...ticketInfo, [name]: value });
 	};
 
-	console.log("data", Initdata);
+	console.log("data", ticketInfo);
 	
 
 	return (
@@ -93,10 +93,8 @@ function SearchTrip() {
 
 				<div>
 					<LinkBtn
-						to={{
-							pathname: "/destination",
-							state: ticketInfo.destination && ticketInfo,
-						}}
+						to="/destination"
+						state={ticketInfo}
 					>
 						<FaSearch />
 					</LinkBtn>

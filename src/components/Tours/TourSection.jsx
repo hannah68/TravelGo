@@ -1,15 +1,14 @@
 import React,{useState} from 'react'
 import SingleTour from './SingleTour'
-import {tourInfos, allTours} from './data'
 import {TourContainer, TourInfoContainer, TourTitle,Button, Title} from './TourSectionElements';
 
-function TourSection() {
+function TourSection(props) {
+    const {tourInfo} = props;
     const [allTour, setAllTour] = useState([]);
     
-    const getTours = () => {
-        setAllTour(allTours)
+    const getRemaningTours = () => {
+        setAllTour(tourInfo);
     }
-    
     
     return (
         <TourContainer id='destination'>
@@ -19,12 +18,13 @@ function TourSection() {
             </TourTitle>
 
             <TourInfoContainer>
-                {tourInfos.map((tour) => {
-                    return <SingleTour key={tour.id} {...tour}/>
-                })}
-                {allTour.length > 0 && allTours.map((el) => <SingleTour key={el.id} {...el}/>)}
+                {allTour.length > 0 ? allTour.map((el) => <SingleTour key={el.id} {...el}/>) : (
+                    tourInfo.slice(0,3).map((tour) => {
+                        return <SingleTour key={tour.id} {...tour}/>
+                    })
+                )}
             </TourInfoContainer>
-            <Button onClick={getTours}>View All</Button>
+            <Button onClick={getRemaningTours}>View All</Button>
         </TourContainer>
     )
 }
