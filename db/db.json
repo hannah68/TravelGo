@@ -185,8 +185,8 @@
           "image":"./assets/images/user4.jpg",
           "text":"Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic."
         }
-      ],
-      "questions" : [
+    ],
+    "questions" : [
         {
           "id": 1,
           "title": "Do I need travel insurance?",
@@ -223,6 +223,5 @@
             "info":
               "Your card will only be charged if the booking has been confirmed exactly as quoted. If we are unable to confirm your booking as quoted, you will not be charged."
         }
-      ]
-
+    ]
 }

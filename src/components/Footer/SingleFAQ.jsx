@@ -1,28 +1,33 @@
-import React, {useState} from 'react'
-import {Question, Header, QTitle, Btn, Answer} from './SingleFAQElements';
-import {FaAngleDown, FaAngleUp} from 'react-icons/fa';
+import { useState } from "react";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
-function SingleFAQ({title,info}) {
-    const [showAnswer, setShowAnswer] = useState(false);
+import { Question, Header, QTitle, Btn, Answer } from "./SingleFAQElements";
 
-    const showAnswerHandler = () =>{
-        setShowAnswer(!showAnswer);
-    }
+import { iconquestion } from "../../utils";
 
-    const iconStyle = {width: '1.5em', height: '1.5em', color:'#0F0178'};
+const SingleFAQ = ({ title, info }) => {
+	const [showAnswer, setShowAnswer] = useState(false);
 
-    return (
-        <Question>
-            <Header>
-                <QTitle>{title}</QTitle>
-                <Btn onClick={showAnswerHandler}>
-                    {showAnswer ? <FaAngleUp style={iconStyle}/> : <FaAngleDown style={iconStyle}/>}
-                </Btn>
-            </Header>
+	const showAnswerHandler = () => {
+		setShowAnswer(!showAnswer);
+	};
 
-            {showAnswer && <Answer>{info}</Answer>}
-        </Question>
-    )
-}
+	return (
+		<Question>
+			<Header>
+				<QTitle>{title}</QTitle>
+				<Btn onClick={showAnswerHandler}>
+					{showAnswer ? (
+						<FaAngleUp style={iconquestion} />
+					) : (
+						<FaAngleDown style={iconquestion} />
+					)}
+				</Btn>
+			</Header>
 
-export default SingleFAQ
+			{showAnswer && <Answer>{info}</Answer>}
+		</Question>
+	);
+};
+
+export default SingleFAQ;

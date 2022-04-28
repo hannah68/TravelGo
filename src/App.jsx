@@ -1,34 +1,50 @@
-// import {useState} from 'react';
 import { Route, Routes } from "react-router";
-import {useEffect, useState} from 'react'
-import Home from './pages/Home'
-import Signin from './pages/Signin'
-import Destination from './pages/Destination'
-import Nav from './components/Nav/Nav';
+import { useEffect, useState, useReducer } from "react";
 
+import Home from "./pages/Home";
+import Signin from "./pages/Signin";
+import Destination from "./pages/Destination";
+import Nav from "./components/Nav/Nav";
 
-function App() {
-  const [allTripData, setallTripData] = useState([])
+import { ticketInfoReducer, UserContext } from "./Reducer";
 
-  useEffect(() => {
-    const fetchTourData = async () => {
-        const tourRes = await fetch('http://localhost:3030/tripData')
-        const tourData = await tourRes.json();
-        setallTripData(tourData);
-    }
-    fetchTourData()
-}, [])
-  
-  return (
-    <>
-    <Nav/>
-    <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/signin' element={<Signin/>}/>
-        <Route path='/destination' element={<Destination allTripData={allTripData}/>}/>
-    </Routes>
-    </>
-  );
-}
+import { APIEndPoints, PAGE_LINK } from "./config";
+
+const Initdata = {
+	destination: "",
+	date: "",
+	passengers: "",
+};
+
+const App = () => {
+	const [allTripData, setallTripData] = useState([]);
+	const [ticketInfoState, dispatchTicket] = useReducer(
+		ticketInfoReducer,
+		Initdata
+	);
+
+	useEffect(() => {
+		const fetchTourData = async () => {
+			const tourRes = await fetch(APIEndPoints.trip);
+			const tourData = await tourRes.json();
+			setallTripData(tourData);
+		};
+		fetchTourData();
+	}, []);
+
+	return (
+		<UserContext.Provider value={{ ticketInfoState, dispatchTicket }}>
+			<Nav />
+			<Routes>
+				<Route path={PAGE_LINK.home} element={<Home />} />
+				<Route path={PAGE_LINK.signin} element={<Signin />} />
+				<Route
+					path={PAGE_LINK.destionation}
+					element={<Destination allTripData={allTripData} />}
+				/>
+			</Routes>
+		</UserContext.Provider>
+	);
+};
 
 export default App;
