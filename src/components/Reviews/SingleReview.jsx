@@ -1,4 +1,5 @@
-// import React, { useState } from "react";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
 import {
 	BgImage,
 	ReviewContainer,
@@ -12,14 +13,14 @@ import {
 	UserImage,
 	QuoteIcon,
 } from "./ReviewSectionElements";
+
 import quote from "../../images/quotes-top.svg";
 import quoteBottom from "../../images/quotes.svg";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
-function SingleReview(props) {
+const SingleReview = (props) => {
 	const { tourReviews, index, setIndex } = props;
-    
-    const { name, image, text } = tourReviews[index];
+
+	const { name, image, text } = tourReviews[index];
 
 	// check index number
 	const checkIndexNumber = (number) => {
@@ -48,12 +49,11 @@ function SingleReview(props) {
 		});
 	};
 
-    
 	return (
 		<BgImage>
 			<ReviewContainer>
 				<ImageContainer>
-					<UserImage src={image}/>
+					<UserImage src={image} />
 					<QuoteIcon>
 						<img src={quote} alt="quote img" />
 					</QuoteIcon>
@@ -77,6 +77,6 @@ function SingleReview(props) {
 			</ReviewContainer>
 		</BgImage>
 	);
-}
+};
 
 export default SingleReview;
