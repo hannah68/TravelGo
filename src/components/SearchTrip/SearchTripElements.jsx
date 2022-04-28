@@ -85,7 +85,32 @@ export const SelectedStyled = styled.select`
         width: 120px;
     }
 `
+export const Btn = styled.button`
+    background: var(--clr-tertiary);
+    width: 60px;
+    padding: 5px 10px;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border:0;
+    transition: transform .3s ease-out;
 
+    &:hover{
+        background: var(--clr-tertiary-1);
+        border:1px solid var(--clr-tertiary);
+    }
+    &:active{
+       transform: translateY(3px);
+    }
+    @media screen and (max-width:768px){
+        width: 80px;
+    }
+    
+`
 
 export const LinkBtn = styled(LinkRoute)`
     background: var(--clr-tertiary);
