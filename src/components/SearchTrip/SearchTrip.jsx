@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useContext } from "react";
+import { FaSearch } from "react-icons/fa";
+
 import {
 	Container,
 	FormContainer,
@@ -7,36 +9,38 @@ import {
 	LinkBtn,
 	ControlGroup,
 } from "./SearchTripElements";
-import { FaSearch } from "react-icons/fa";
 
-const Initdata = {
-	destination: "",
-	date: "",
-	passengers: "",
-};
+import { UserContext } from "../../Reducer";
 
-function SearchTrip() {
-	const [ticketInfo, setTicketInfo] = useState(Initdata);
-	
+import { PAGE_LINK } from "../../config";
+
+const SearchTrip = () => {
+	const userTicketInfo = useContext(UserContext);
 
 	const changeHandler = (e) => {
 		const { name, value } = e.target;
-		setTicketInfo({ ...ticketInfo, [name]: value });
+
+		userTicketInfo.dispatchTicket({
+			type: "UPDATE_TICKET",
+			field: name,
+			payload: value,
+		});
 	};
 
-	console.log("data", ticketInfo);
-	
+	const submitFormHandler = (e) => {
+		e.preventDefault();
+	};
 
 	return (
 		<Container>
-			<FormContainer>
+			<FormContainer onSubmit={submitFormHandler}>
 				<ControlGroup>
 					<StyledLabel htmlFor="destination">Destination:</StyledLabel>
 					<SelectedStyled
 						name="destination"
 						id="destination"
 						onChange={changeHandler}
-						value={Initdata.destination}
+						value={userTicketInfo.ticketInfoState.destination}
 					>
 						<option value="destination">Select Destination</option>
 						<option value="Amsterdom">Amsterdom</option>
@@ -58,7 +62,7 @@ function SearchTrip() {
 						name="date"
 						id="date"
 						onChange={changeHandler}
-						value={Initdata.date}
+						value={userTicketInfo.ticketInfoState.date}
 					>
 						<option value="Select">Select Date</option>
 						<option value="Jan 2022">Jan 2023</option>
@@ -81,7 +85,7 @@ function SearchTrip() {
 						name="passengers"
 						id="passengers"
 						onChange={changeHandler}
-						value={Initdata.passengers}
+						value={userTicketInfo.ticketInfoState.passengers}
 					>
 						<option value="Passangers">Select Passangers</option>
 						<option value="1">1</option>
@@ -92,16 +96,13 @@ function SearchTrip() {
 				</ControlGroup>
 
 				<div>
-					<LinkBtn
-						to="/destination"
-						state={ticketInfo}
-					>
+					<LinkBtn to={{ pathname: PAGE_LINK.destionation }}>
 						<FaSearch />
 					</LinkBtn>
 				</div>
 			</FormContainer>
 		</Container>
 	);
-}
+};
 
 export default SearchTrip;

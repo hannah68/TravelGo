@@ -1,59 +1,50 @@
-import {useEffect, useState} from 'react'
-// import {allSearchTours} from '../components/SearchTrip/tripData'
-import { useLocation } from "react-router-dom";
-import {ResultsContainer, ResultsTitle, ResultsParaghraph} from './DestinationElement'
-import SearchResults from './SearchResults'
+import { useContext } from "react";
 
+import {
+	ResultsContainer,
+	ResultsTitle,
+	ResultsParaghraph,
+} from "./DestinationElement";
+
+import SearchResults from "./SearchResults";
+
+import { UserContext } from "../Reducer";
 
 const Destination = (props) => {
-    const {allTripData} = props;
-    const [infos, setInfos] = useState({})
-    
-    const location = useLocation();
+	const { allTripData } = props;
+	const userTicketInfo = useContext(UserContext);
 
-
-    useEffect(() => {
-		if (location.state) {
-            // console.log('location', location.state);
-			const { info } = location.state;
-			setInfos(info);
+	const filteredTour = allTripData.filter((tour) => {
+		if (userTicketInfo.ticketInfoState) {
+			if (userTicketInfo.ticketInfoState.destination === "Rome") {
+				console.log(tour.place === "Italy");
+				return tour.place === "Italy";
+			}
+			if (userTicketInfo.ticketInfoState.destination === "Barcelona") {
+				return tour.place.includes("Spain") || tour.place.includes("Barcelona");
+			}
+			if (userTicketInfo.ticketInfoState.destination === "Europe") {
+				return tour.place !== "Japan";
+			}
+			return (
+				tour.place === userTicketInfo.ticketInfoState.destination ||
+				tour.place.includes(userTicketInfo.ticketInfoState.destination)
+			);
 		}
-	}, [location]);
+		return tour;
+	});
 
-    
-    
+	return (
+		<>
+			<ResultsContainer>
+				<ResultsTitle>Search Results</ResultsTitle>
+				<ResultsParaghraph>{filteredTour.length} tour found</ResultsParaghraph>
+				{filteredTour.map((tour) => (
+					<SearchResults key={tour.id} {...tour} />
+				))}
+			</ResultsContainer>
+		</>
+	);
+};
 
-    console.log('infos', infos);
-
-    const filteredTour = allTripData.filter(tour => {
-        if(infos){
-            if(infos.destination === 'Rome'){
-                console.log(tour.place === 'Italy');
-                return tour.place === 'Italy'
-            }
-            // if(infos.destination === 'Barcelona'){
-            //     return tour.place.includes('Spain') || tour.place.includes('Barcelona')
-            // }
-            // if(infos.destination === 'Europe'){
-            //     return tour.place !== 'Japan'
-            // }
-            // return tour.place === infos.destination || tour.place.includes(infos.destination)
-        }
-        return tour
-        
-    });
-    
-    
-     return (
-        <>
-            <ResultsContainer> 
-                <ResultsTitle>Search Results</ResultsTitle>
-                <ResultsParaghraph>{filteredTour.length} tour found</ResultsParaghraph>
-                {filteredTour.map((tour) => <SearchResults key={tour.id} {...tour}/>)}
-            </ResultsContainer>
-        </>
-    )
-    
-}  
-
-export default Destination
+export default Destination;
