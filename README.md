@@ -2,7 +2,7 @@
 
 > This is a travel agancy website that I built to learn styled component.
 
-<img src="./public/assets/images/travelGo.gif" width="400px"/>
+<img src="./public/assets/images/travelGo.gif" width="600px"/>
 
 ## Tech Stack
 - Applied figma to design my wireframe
