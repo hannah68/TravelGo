@@ -1,6 +1,6 @@
 # TravelGo
 
-> This is a travel agancy website that I built to learn styled component.
+> This is a travel agency website that I built to learn styled component.
 
 <img src="./public/assets/images/travelGo.gif" width="600px"/>
 
